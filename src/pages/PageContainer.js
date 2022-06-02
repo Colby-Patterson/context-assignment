@@ -7,6 +7,7 @@ function PageContainer(){
       <div>
         <div>
           <NavLink to='/'>Home</NavLink>
+          <NavLink to='/users'>Users</NavLink>
         </div>
         <div>
           <Outlet />

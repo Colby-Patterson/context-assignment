@@ -6,7 +6,7 @@ function Users() {
   let [loading, setLoading] = useState(true)
 
   useEffect(()=>{
-    getUsers
+    getUsers()
   }, [])
 
   const renderUsers = ()=>{
@@ -14,6 +14,7 @@ function Users() {
       return (
         <div key={user.id}>
           <p>{user.id}</p>
+          <p>{user.email}</p>
         </div>
       )
     })
